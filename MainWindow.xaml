@@ -1,0 +1,40 @@
+﻿<Window x:Class="HttpClient_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HttpClient_WPF"
+        mc:Ignorable="d"
+        Title="HTTP_Client" Height="700" Width="750">
+    <Grid>
+        <Button Content="Скачать страницу" 
+                Margin="469,48,0,0" VerticalAlignment="Top" Height="40" 
+                Click="DownloadPage_Click" HorizontalAlignment="Left" Width="108"/>
+        <TextBox x:Name ="textBoxAddress"                  
+                 HorizontalAlignment="Left" 
+                 Margin="53,48,0,0" 
+                 VerticalAlignment="Top" Width="399" Height="40" FontSize="16"/>
+        <TextBox x:Name ="textBoxResult" 
+                 HorizontalScrollBarVisibility="Auto" 
+                 IsReadOnly="True" 
+                 Margin="53,153,0,0" 
+                 Height="176" VerticalAlignment="Top" 
+                 HorizontalAlignment="Left" Width="649"/>
+        <Button Content="Скачать в Файл" HorizontalAlignment="Left" 
+                Margin="613,48,0,0" VerticalAlignment="Top" 
+                Height="40" Width="98" Click="SaveToFile_Click"/>
+        <TextBox x:Name ="textBoxHeaders" 
+                 HorizontalScrollBarVisibility="Auto" 
+                 IsReadOnly="True" 
+                 Margin="53,388,0,0" 
+                 Height="176" VerticalAlignment="Top" 
+                 HorizontalAlignment="Left" Width="649"/>
+        <Label Content="Код страницы" HorizontalAlignment="Left" 
+               Margin="53,105,0,0" VerticalAlignment="Top" Width="111" FontSize="16"/>
+        <Label Content="Заголовки ответа" HorizontalAlignment="Left" 
+               Margin="53,343,0,0" VerticalAlignment="Top" Width="174" FontSize="16"/>
+        <Label Content="Адресс сайта" HorizontalAlignment="Left" 
+            Margin="53,10,0,0" VerticalAlignment="Top" Width="111" FontSize="16"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "HttpClient_WPF/1.0.0": {
+        "runtime": {
+          "HttpClient_WPF.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HttpClient_WPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
